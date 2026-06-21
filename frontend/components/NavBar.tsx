@@ -26,7 +26,7 @@ export default function NavBar() {
     <header className="border-b border-neutral-800 bg-neutral-950/80 backdrop-blur sticky top-0 z-10">
       <nav className="mx-auto flex max-w-6xl items-center gap-6 px-4 py-3">
         <Link href="/" className="font-bold text-orange-500">
-          YC Idea Gen
+          Genidea
         </Link>
         {user && (
           <div className="flex gap-1">

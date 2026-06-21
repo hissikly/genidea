@@ -9,7 +9,8 @@ export default function Home() {
   return (
     <div className="mx-auto max-w-2xl py-16 text-center">
       <h1 className="text-4xl font-bold">
-        Генератор стартап-идей <span className="text-orange-500">YC</span>
+        <span className="text-orange-500">Genidea</span> — генератор
+        стартап-идей
       </h1>
       <p className="mt-4 text-neutral-400">
         Исследуй ~6000 стартапов Y Combinator, отмечай интересные и генерируй

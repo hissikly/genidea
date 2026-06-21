@@ -4,7 +4,7 @@ import { AuthProvider } from "@/lib/auth-context";
 import NavBar from "@/components/NavBar";
 
 export const metadata: Metadata = {
-  title: "YC Idea Generator",
+  title: "Genidea",
   description: "Browse YC startups and generate new startup ideas with AI",
 };
 

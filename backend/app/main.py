@@ -7,7 +7,7 @@ from app.routers import auth, favorites, ideas, profile, startups
 
 Base.metadata.create_all(bind=engine)
 
-app = FastAPI(title="YC Startup Idea Generator")
+app = FastAPI(title="Genidea")
 
 app.add_middleware(
     CORSMiddleware,
