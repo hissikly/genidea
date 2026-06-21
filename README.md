@@ -1,4 +1,4 @@
-# YC Startup Idea Generator
+# Genidea
 
 Веб-приложение для исследования стартапов Y Combinator и генерации новых
 стартап-идей с помощью ИИ (OpenRouter).
