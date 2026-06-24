@@ -2,7 +2,8 @@
 
 Веб-приложение для исследования стартапов Y Combinator и генерации новых
 стартап-идей с помощью ИИ (OpenRouter).
-
+![alt text](image.png)
+![alt text](image-1.png)
 ## Возможности
 
 - **Каталог стартапов** — ~6000 компаний YC (парсинг через публичный Algolia-индекс)
@@ -36,10 +37,17 @@ OPENROUTER_API_KEY=ваш_ключ_openrouter
 
 ```bash
 cd backend
+python -m venv .venv          # создать изолированное окружение
+source .venv/bin/activate     # активировать (Windows: .venv\Scripts\activate)
 pip install -r requirements.txt
-python -m app.seed        # один раз: загрузить стартапы YC в БД
+python -m app.seed            # один раз: загрузить стартапы YC в БД
 uvicorn app.main:app --reload --port 8000
 ```
+
+> **Важно:** используйте отдельное виртуальное окружение, а не базовое
+> окружение conda — иначе несовместимые версии пакетов (например, `starlette`)
+> приведут к ошибкам при запуске. Перед каждым запуском активируйте окружение
+> командой `source .venv/bin/activate`.
 
 ## Запуск frontend
 
